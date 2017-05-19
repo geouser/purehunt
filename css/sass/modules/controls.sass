@@ -1,16 +1,27 @@
 .button 
-	background-color: peru
-	width: 180px
+	background-color: $ac1
 	height: 60px
 	line-height: 60px
 	text-align: center
-	text-transform: uppercase
 	color: #fff
-	font-weight: 500
-	font-size: 16px
+	font-size: 17px
 	display: inline-block
-	border: none
+	border: 1px solid $ac1
+	border-radius: 60px
+	padding: 0 50px  
+	transition: all .2s 
 	cursor: pointer
+	
+	&:hover 
+		background-color: #FFF
+		color: $text  
+	
+	&--white 
+		background-color: #FFF
+		color: $text  
+		&:hover 
+			background-color: $ac1
+			color: #fff  
 
 	@media (max-width: 1500px) 
 		width: 160px
