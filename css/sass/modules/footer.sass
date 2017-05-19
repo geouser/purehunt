@@ -1,6 +1,8 @@
 .site-footer
     background-color: $ac1
     color: #fff
+    position: relative
+    padding: 20px 0
 
     &__logo
         width: 200px
@@ -8,3 +10,26 @@
         img
             display: block
             max-width: 100%
+
+    &__buttons
+        margin: 0 -10px
+
+        .button 
+            margin: 0 10px
+
+    &__address
+        font-size: 16px
+        line-height: 24px
+
+        b
+            font-weight: 700
+
+    &__phone
+        a[href^=tel]
+            font-size: 22px
+            font-weight: 700
+
+        a[href^=mailto]
+            font-size: 14px
+            color: #fff
+            border-bottom: 1px dashed #fff
