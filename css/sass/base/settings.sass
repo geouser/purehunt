@@ -26,6 +26,9 @@ body
         background-position: 0 100% 
     &.bg 
         background-color: #f9fdfe 
+    &.bg-blue 
+        background-color: $ac1 
+        color: #FFF 
     &-title
         font-family: $c
         font-weight: 400
@@ -38,7 +41,6 @@ body
 
         &.white
             color: #fff
-
         h2 
             font-size: inherit
             font-weight: normal
@@ -56,3 +58,27 @@ body
 
 +placeholder
 	opacity: 1
+    
+.list 
+    column-count: 2
+    column-gap: 60px  
+    list-style-type: none
+    text-align: left
+    li 
+        display: block
+        font-size: 16px
+        line-height: 1.4  
+        margin-bottom: 14px 
+        position: relative
+        padding-left: 25px 
+        &:before 
+            width: 18px
+            height: 18px  
+            position: absolute
+            left: 0
+            top: 0
+            content: ""
+            display: block
+            background-image: url("../images/ok-sign.png")
+            background-repeat: no-repeat
+            background-position: 100% 100%  
