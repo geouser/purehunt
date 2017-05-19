@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
     $(function() { 
         var $document = $(document),
             $element = $('.menu-button'),
-            $element2 = $('header'),
+            $element2 = $('.header'),
             className = 'hasScrolled';
 
         $document.scroll(function() {

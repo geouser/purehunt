@@ -1,9 +1,13 @@
 .header
 	+position(fixed, 0, 0, auto, 0)
 	+transition(all, .4s)
+	z-index: 100 
 	
 	height: 80px
 	background: #fff
+	
+	&.hasScrolled 
+		box-shadow: 0 0 10px rgba(0,0,0,.4) 
 	
 	.wrapper
 		height: 100%

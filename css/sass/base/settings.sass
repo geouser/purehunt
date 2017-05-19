@@ -20,7 +20,12 @@ body
 
 .section
     padding: 80px 0
-
+    background-repeat: no-repeat
+    &.dots 
+        background-image: url("../images/dots.jpg")
+        background-position: 0 100% 
+    .bg 
+        background-color: #f9fdfe 
     &-title
         font-family: $c
         font-weight: 400
@@ -46,6 +51,8 @@ body
             background-color: $ac2
             margin: 0 auto 29px
 
+.text-block 
+    padding: 0 10% 
 
 +placeholder
 	opacity: 1
