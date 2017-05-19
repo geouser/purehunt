@@ -1,32 +1,59 @@
 .button 
-	background-color: $ac1
 	height: 60px
 	line-height: 60px
 	text-align: center
 	color: #fff
 	font-size: 17px
 	display: inline-block
-	border: 1px solid $ac1
+	border: 2px solid $ac1
 	border-radius: 60px
 	padding: 0 50px  
 	transition: all .2s 
 	cursor: pointer
+	font-weight: 700;
 	
-	&:hover 
-		background-color: #FFF
-		color: $text  
-	
-	&--white 
-		background-color: #FFF
-		color: $text  
+	&--blue 
+		border-color: $ac1
+		background-color: transparent
+		color: $text
+
 		&:hover 
-			background-color: $ac1
+			background-color: $ac1-hover
+			border-color: $ac1-hover
 			color: #fff  
 
+		&.button--solid 
+			background-color: $ac1
+			color: #fff
+
+			&:hover 
+				background-color: $ac1-hover
+
+	&--white 
+		border-color: #fff
+		background-color: transparent
+		color: #fff
+
+		&:hover 
+			background-color: $ac4
+			border-color: $ac4
+			color: #fff  
+
+		&.button--solid 
+			background-color: #fff
+			color: $ac1
+
+			&:hover 
+				background-color: $ac4
+				color: #fff
+
+
+
 	@media (max-width: 1500px) 
-		width: 160px
 		height: 50px
 		line-height: 50px
+		padding-left: 25px
+		padding-right: 25px
 		
 
 .scroll-down 
