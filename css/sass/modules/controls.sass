@@ -11,6 +11,9 @@
 	transition: all .2s 
 	cursor: pointer
 	font-weight: 700;
+
+	&--full
+		width: 100%
 	
 	&--blue 
 		border-color: $ac1
@@ -54,6 +57,13 @@
 		line-height: 50px
 		padding-left: 25px
 		padding-right: 25px
+
+	@media (max-width: 767px) 
+		height: 45px
+		line-height: 41px
+		padding-left: 20px
+		padding-right: 20px
+		font-size: 16px
 		
 
 .scroll-down 
@@ -68,13 +78,13 @@
 	right: 0
 	margin: auto
 	z-index: 10  
-	background-image: url("../images/down.png")
+	background-image: url("../images/down.svg")
 	background-repeat: no-repeat
 	background-position: 50% 50% 
 	cursor: pointer
 	transition: all .2s 
 	&:hover 
-		background-image: url("../images/down-w.png")
+		background-image: url("../images/down-w.svg")
 		background-color: $ac2 
 /* ------------------------------------ */
 /*  SLICK ARROWS  */

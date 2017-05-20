@@ -19,31 +19,31 @@
        
         <!--=================================================================================================-->
                                                     <!-- HEADER -->
-        <header class="header">
-            <div class="wrapper row middle-xs">
-                
-                <div class="col-md-3">
-                    <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
-                </div>
-
-                <div class="col-md-6">
-                    <nav class="page-menu"><!-- start navigation -->
-                        <ul>
-                            <li><a href="index.html" class="active">Услуги</a></li>
-                            <li><a href="about.html">Как это работает</a></li>
-                            <li><a href="blog.html">О нас</a></li>
-                            <li><a href="contacts.html">Преимущества</a></li>
-                        </ul>
-                    </nav><!-- end nav -->
-                </div>
-
-                <div class="col-md-3">
-                    <div class="header__contacts">
-                        <a href="tel:+7 495 669 2 111" class="tel">+7 495 669 2 111</a>
-                        <a href="mailto:info@purehunt.com" class="mail">info@purehunt.com</a>
+        <header class="header compensate-for-scrollbar">
+            <div class="wrapper">
+                <div class="row middle-xs between-xs">
+                    <div class="col-md-3 col-xs-6">
+                        <a href="index.html" class="logo"><img src="images/logo.svg" alt=""></a>
                     </div>
-                </div>
 
+                    <div class="col-md-6">
+                        <nav class="page-menu"><!-- start navigation -->
+                            <ul>
+                                <li><a href="#services" class="active anchor">Услуги</a></li>
+                                <li><a href="#how-it-work" class="anchor">Как это работает</a></li>
+                                <li><a href="#about" class="anchor">О нас</a></li>
+                                <li><a href="#advantages" class="anchor">Преимущества</a></li>
+                            </ul>
+                        </nav><!-- end nav -->
+                    </div>
+
+                    <div class="col-md-3 col-xs-6">
+                        <div class="header__contacts">
+                            <a href="tel:+7 495 669 2 111" class="tel">+7 495 669 2 111</a>
+                            <a href="mailto:info@purehunt.com" class="mail">info@purehunt.com</a>
+                        </div>
+                    </div>    
+                </div>
             </div><!-- end wrapper -->
         </header><!-- end header -->
         
@@ -60,15 +60,15 @@
             <div class="wrapper">
                 <h1>Сервис для быстрого и удобного подбора <span>лучших профессионалов для временной
 или проектной работы</span></h1>
-                <button class="button button--blue button--solid">Разместить заявку</button>
-                <button class="button button--blue">Зарегистрироваться как эксперт</button>
+                <button href="#modal-popup" class="button button--blue button--solid fancybox">Разместить заявку</button>
+                <button href="#modal-popup-2" class="button button--blue fancybox">Зарегистрироваться как эксперт</button>
             </div><!-- end wrapper -->
-            <div class="scroll-down anchor" href="#anchor"></div>
+            <div class="scroll-down anchor" href="#services"></div>
         </section><!-- end  section --> 
 
 
 
-        <section id="anchor" class="section dots">
+        <section id="services" class="section dots">
             <div class="wrapper wrapper--sm">
                 <div class="section-title">
                     <h2>Наши услуги</h2>
@@ -80,7 +80,7 @@
 
 
 
-        <section id="anchor" class="section bg">
+        <section id="how-it-work" class="section bg">
             <div class="wrapper">
                 <div class="section-title">
                     <h2>Как это работает</h2>
@@ -89,7 +89,7 @@
                     <div class="col-sm-4 col-xs-12">
                         <div class="step-block">
                             <div class="step-block__img">
-                                <img src="images/envelope.png" alt="">
+                                <img src="images/step-1.svg" alt="">
                             </div>
                             <strong>Оставьте заявку</strong>
                             <p>Наш консультант свяжется с вами в течение нескольких часов для уточнения запроса</p>
@@ -98,7 +98,7 @@
                     <div class="col-sm-4 col-xs-12">
                         <div class="step-block">
                             <div class="step-block__img">
-                                <img src="images/people.png" alt="">
+                                <img src="images/step-2.svg" alt="">
                             </div>
                             <strong>Отбор специалистов</strong>
                             <p>В  течение нескольких дней предоставим на выбор наиболее подходящих исполнителей</p>
@@ -107,7 +107,7 @@
                     <div class="col-sm-4 col-xs-12">
                         <div class="step-block">
                             <div class="step-block__img">
-                                <img src="images/person.png" alt="">
+                                <img src="images/step-3.svg" alt="">
                             </div>
                             <strong>Выбор эксперта</strong>
                             <p>Сделайте выбор и приступайте к работе</p>
@@ -173,7 +173,7 @@
             </div><!-- end wrapper -->
         </section><!-- end section --> 
 
-        <section id="anchor" class="section dots-right">
+        <section id="about" class="section dots-right">
             <div class="wrapper wrapper--sm">
                 <div class="section-title">
                     <h2>О нас</h2>
@@ -209,7 +209,7 @@
             </div>
         </section>
 
-        <section class="section bg">
+        <section id="advantages" class="section bg">
             <div class="wrapper">
                 <div class="section-title">
                     <h2>Наши преимущества</h2>
@@ -276,8 +276,8 @@
                         <a href="index.html"><img src="images/footer-logo.svg" alt=""></a>
                     </div>
                     <div class="site-footer__buttons">
-                        <button class="button button--white button--solid">Разместить заявку</button>
-                        <button class="button button--white">Зарегистрироваться как эксперт</button>
+                        <button href="#modal-popup" class="button button--white button--solid fancybox">Разместить заявку</button>
+                        <button href="#modal-popup-2" class="button button--white fancybox">Зарегистрироваться как эксперт</button>
                     </div>
                     <div class="site-footer__address text-left">
                         <p><b>Адрес:</b> 115114, Москва, <br>ул. Дербеневская, 11</p>
@@ -290,7 +290,113 @@
             </div>
         </footer>
 
-        <div id="modal-popup" class="fncb-hide zoom-anim-dialog popup"></div>
+        <div id="modal-popup" class="fncb-hide zoom-anim-dialog popup">
+            <div class="popup-form">
+                <div class="popup-heading">
+                    <p class="popup-heading__title">Оставьте заявку</p>
+                    <p class="popup-heading__subtitle">наш консультант свяжется с вами в ближайшее время</p>
+                </div>
+
+                <form action="">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <input type="text" name="company" placeholder="Название компании">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="activity" placeholder="Вид деятельности">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="workers" placeholder="Количество сотрудников">
+                            </div>
+                            <div class="form-group">
+                                <input type="url" name="site" placeholder="Сайт компании">
+                            </div>
+                            <div class="form-group">
+                                <select name="service">
+                                    <option value="" disabled selected>Тип услуги</option>
+                                    <option value="1">Услуга 1</option>
+                                    <option value="2">Услуга 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <textarea name="description" placeholder="Подробное  описание проблемы (опционально)"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="budget" placeholder="Бюджет (опционально)">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" placeholder="Телефон для связи">
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group button-group text-center">
+                                <button class="button button--blue button--solid">Разместить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div id="modal-popup-2" class="fncb-hide zoom-anim-dialog popup flex-popup">
+            <div class="flex-wrap">
+                <div class="popup-description">
+                    <p>Монетизируйте свои опыт и знания ― участвуйте в новых интересных проектах. Мы сотрудничаем с фондами прямых инвестиций, управляющими компаниями, венчурными  фондами, бизнес-инкубаторами, развивающимися компаниями в сегменте среднего бизнеса, перспективными стартапами и другими заказчиками.</p>
+                    <p><strong>PurehuntPro гарантирует полную конфиденциальность для экспертов.</strong></p>
+                </div>
+                <div class="popup-form small">
+                    <div class="popup-heading">
+                        <p class="popup-heading__title">Оставьте данные</p>
+                        <p class="popup-heading__subtitle">наш консультант свяжется с вами в ближайшее время</p>
+                    </div>
+
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="ФИО">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Телефон для связи">
+                        </div>
+                        <div class="form-group">
+                            <select name="industry">
+                                <option value="" disabled selected>Индустрия</option>
+                                <option value="1">Индустрия 1</option>
+                                <option value="2">Индустрия 2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="specialization">
+                                <option value="" disabled selected>Специализация</option>
+                                <option value="1">Специализация 1</option>
+                                <option value="2">Специализация 2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="budget" placeholder="Ожидание по бюджету (опционально)">
+                        </div>
+                        <div class="form-group">
+                            <span class="input file">
+                                <span class="placeholder" data-label="Резюме">Резюме</span>
+                                <input type="file" name="resume" accept=".doc,.docx,.pdf" required="">
+                            </span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="url" name="site" placeholder="Ссылка на  Linkedin (опционально)">
+                        </div>
+                        
+                        <div class="form-group button-group text-center">
+                            <button class="button button--blue button--solid button--full">Зарегистрироваться</button>
+                        </div>
+                    </form>
+                </div> <!-- end popup-form -->    
+            </div>
+            
+        </div>
 
         <div id="modal-popup-ok" class="fncb-hide zoom-anim-dialog popup result">
             <p class="heading">Спасибо!</p>

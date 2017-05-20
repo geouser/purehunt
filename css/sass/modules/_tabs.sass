@@ -1,17 +1,46 @@
 .tabs-menu
     margin-bottom: 25px  
+
+    @media (max-width: 599px)
+        +flex($ai: stretch)
     li 
         display: inline-block
         vertical-align: middle
         text-transform: uppercase
         border-bottom: 3px solid $ac3
         margin: 0 12px 
+
+        @media (max-width: 599px)
+            font-size: 15px
+            width: calc(50% - 6px)
+            margin: 0 3px
+            padding: 3px;
+            border: 2px solid $ac3
+            &:before
+                content: ''
+                display: inline-block
+                vertical-align: middle
+                height: 100%
+                width: 0
+                margin-right: 0
+        @media (max-width: 450px)
+            font-size: 13px
+            
         a 
             color: $ac3 
             font-weight: 700 
             letter-spacing: .03em 
+
+            @media (max-width: 599px)
+                display: inline-block;
+                vertical-align: middle
+                letter-spacing: normal
+
         &.current 
             border-color: $ac1
+            @media (max-width: 599px)
+                background-color: #fff
+
             a 
                 color: $ac1 
  

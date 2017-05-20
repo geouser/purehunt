@@ -24,7 +24,7 @@
 	top: $top
 	bottom: $bottom
 
-=flex($ai: center, $j: space-between, $d: row, $w: w)
+=flex($ai: center, $j: space-between, $d: row, $w: wrap)
 		display: -webkit-box
 		display: -webkit-flex
 		display: -moz-flex
@@ -78,7 +78,7 @@
 
 =textEnd($overflow: ellipsis)
 	overflow: hidden
-	white-space: now
+	white-space: nowrap
 	text-overflow: $overflow // values are: clip, ellipsis, or a string
 
 

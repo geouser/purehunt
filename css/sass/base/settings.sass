@@ -10,6 +10,16 @@ body
     font-size: 18px   
     color: $text 
     letter-spacing: .03em 
+
+    @media (max-width: 1200px)
+        padding-top: 60px
+
+    @media (max-width: 599px)
+        font-size: 16px
+        letter-spacing: normal
+        padding-top: 53px
+    @media (max-width: 450px)
+        padding-top: 49px
       
 
 
@@ -22,11 +32,14 @@ body
     
 .wrapper--sm 
     width: 990px 
+    max-width: 100%
 
 
 .section
     padding: 90px 0 80px
     background-repeat: no-repeat
+    @media (max-width: 1200px)
+        padding: 60px 0
     &.dots 
         background-image: url("../images/dots.jpg")
         background-position: 0 100% 
@@ -52,6 +65,18 @@ body
         margin-bottom: 35px
         letter-spacing: 0.05em 
 
+        @media (max-width: 1200px)
+            font-size: 32px
+            margin-bottom: 32px
+            letter-spacing: normal
+        @media (max-width: 991px)
+            font-size: 28px
+            margin-bottom: 28px
+        @media (max-width: 767px)
+            font-size: 26px
+        @media (max-width: 600px)
+            font-size: 24px
+
         &.white
             color: #fff
         h2 
@@ -66,6 +91,9 @@ body
             background-color: $ac2
             margin: 0 auto 29px
 
+            @media (max-width: 1200px)
+                margin-bottom: 20px
+
 
 .text-right
     text-align: right
@@ -78,13 +106,23 @@ body
 
 +placeholder
 	opacity: 1
-    
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+
 .list 
     column-count: 2
     column-gap: 60px  
     list-style-type: none
     text-align: left
     padding-top: 10px 
+
+    @media (max-width: 767px) 
+        column-count: 1
+
     li 
         display: block
         font-size: 16px
@@ -98,10 +136,10 @@ body
             height: 18px  
             position: absolute
             left: 0
-            top: 0
+            top: 2px
             content: ""
             display: block
-            background-image: url("../images/ok-sign.png")
+            background-image: url("../images/ok-sign.svg")
             background-repeat: no-repeat
             background-position: 100% 100%  
             

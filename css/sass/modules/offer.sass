@@ -1,6 +1,7 @@
 .offer
 	height: 730px
 	max-height: 100%
+	min-height: 490px
 	position: relative
 	+flex($d: column, $ai: center, $j: center)
 	
@@ -9,10 +10,21 @@
 	-webkit-background-size: cover
 	-o-background-size: cover
 	background-size: cover
+
+	@media (max-width: 767px)
+		height: auto
+		padding: 60px 0
+		min-height: 0
+		max-height: none
+		background-position: 65% 50%
 	
 	.wrapper 
 		text-align: left
 		margin-top: -65px 
+
+		@media (max-width: 767px)
+			text-align: center
+			margin-top: 0
 	
 	& + .section 
 		padding-top: 98px 
@@ -26,6 +38,23 @@
 		max-width: 100%  
 		color: #3A3A3A 
 		font-weight: 300 
+
+		@media (max-width: 1200px)
+			font-size: 54px
+			line-height: 64px
+
+		@media (max-width: 991px)
+			font-size: 44px
+			line-height: 54px
+		@media (max-width: 767px)
+			text-align: center
+			font-size: 38px
+			line-height: 48px
+		@media (max-width: 599px)
+			text-align: center
+			font-size: 34px
+			line-height: 44px
+
 		span 
 			display: block
 			font-size: 40px
@@ -33,12 +62,35 @@
 			line-height: 46px 
 			font-weight: 200 
 			text-transform: none
+
+			@media (max-width: 1200px)
+				font-size: 32px
+				line-height: 38px
+			@media (max-width: 991px)
+				font-size: 28px
+				line-height: 34px
+			@media (max-width: 767px)
+				font-size: 26px
+				line-height: 32px
+			@media (max-width: 599px)
+				font-size: 24px
+				line-height: 30px
+
 		& + * 
-			margin-top: 70px 
+			margin-top: 70px
+
+			@media (max-width: 767px)
+				 margin-top: 50px!important
 	
 	.button 
-		& + .button 
-			margin-left: 30px 
+		@media (max-width: 767px)
+			display: block
+			margin: 10px auto
+			letter-spacing: normal
+
+		@media (min-width: 768px)
+			& + .button 
+				margin-left: 30px 
 
 
 
@@ -46,12 +98,16 @@
 .section 
 	counter-reset: step;
 
-.how-it-works 
 
 .step-block 
 	width: 270px 
 	margin: 0px auto
 	counter-increment: step;
+	max-width: 100%
+
+	@media (max-width: 599px)
+		margin-bottom: 50px
+
 	&__img 
 		text-align: center
 		width: 110px
@@ -70,7 +126,7 @@
 			bottom: 0
 			margin: auto
 			z-index: 2 
-			background: #FFF  
+			background-color: #f9fdfe
 			color: $text
 			font-size: 26px
 			line-height: 50px
@@ -102,6 +158,9 @@
 	display: block
 	margin: 55px auto 0  
 	max-width: 100%  
+
+	@media (max-width: 599px)
+		margin-top: 0
 	  
 .logo-text
 	color: $ac1
